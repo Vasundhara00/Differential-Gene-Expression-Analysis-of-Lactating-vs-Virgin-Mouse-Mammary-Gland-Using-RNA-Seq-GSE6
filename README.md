@@ -9,7 +9,7 @@ The goal of this project is to explore transcriptomic changes in mammary tissue 
 ## 📂 Repository Structure
 
 RNAseq-BreastCancer-DEG/
-├── data/ # Raw and processed input data (e.g., count matrix, metadata)
+├── data/ # Raw and processed input data (e.g., count matrix, metadata) (Due to GitHub's preview limitations, the CSV file in data/ may not be viewable directly on GitHub, but it is downloadable)
 ├── scripts/ # R scripts used for analysis and visualization
 ├── figures/ # Output plots (e.g., heatmaps, volcano plots)
 ├── README.md # Project description and guide
