@@ -1,4 +1,4 @@
-🧬 RNA-Seq Differential Expression Analysis (GSE60450)
+#🧬 RNA-Seq Differential Expression Analysis (GSE60450)
 This project performs a differential gene expression (DEG) analysis on RNA-Seq data from mouse mammary gland tissues comparing pregnant and virgin samples. The dataset was sourced from the GEO database (GSE60450), and analysis was conducted using DESeq2 in R.
 
 📌 Project Goals
