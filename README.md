@@ -1,45 +1,75 @@
-# RNAseq-BreastCancer-DEG
+🧬 RNA-Seq Differential Expression Analysis (GSE60450)
+This project performs a differential gene expression (DEG) analysis on RNA-Seq data from mouse mammary gland tissues comparing pregnant and virgin samples. The dataset was sourced from the GEO database (GSE60450), and analysis was conducted using DESeq2 in R.
 
-This repository contains code, data, and visualizations from an RNA-seq analysis project focused on identifying differentially expressed genes (DEGs) in breast tissue samples from pregnant and virgin mice.
+📌 Project Goals
+To identify differentially expressed genes between pregnant and virgin mouse mammary tissues.
 
-## 📌 Project Summary
+To visualize gene expression changes using volcano plots and heatmaps.
 
-The goal of this project is to explore transcriptomic changes in mammary tissue associated with pregnancy, by identifying and visualizing the top differentially expressed genes using RNA-seq data.
+To apply and demonstrate RNA-Seq workflows using real NGS data.
 
-## 📂 Repository Structure
+To build a portfolio-worthy bioinformatics project using R and DESeq2.
 
-RNAseq-BreastCancer-DEG/
-├── data/ # Raw and processed input data (e.g., count matrix, metadata) (Due to GitHub's preview limitations, the CSV file in data/ may not be viewable directly on GitHub, but it is downloadable)
-├── scripts/ # R scripts used for analysis and visualization
-├── figures/ # Output plots (e.g., heatmaps, volcano plots)
-├── README.md # Project description and guide
+📂 Dataset
+GEO Accession: GSE60450
 
+Organism: Mus musculus (mouse)
 
-## 📈 Key Features
+Samples: 12 total (6 pregnant, 6 virgin)
 
-- Normalization and transformation of RNA-seq count data using DESeq2
-- Identification of DEGs using adjusted p-values (padj)
-- Heatmap of top 20 DEGs using hierarchical clustering
-- Color-coded grouping of sample conditions (pregnant vs virgin)
+Input: Gene-wise raw count matrix
 
-## 🔧 Tools & Packages
+Metadata: Manually created in R to define conditions (pregnant vs virgin)
 
-- R
-- DESeq2
-- pheatmap
-- dplyr, tidyr, ggplot2
+⚙️ Tools & Packages
+R
 
-## 📊 Example Output
+DESeq2
 
-![Top 20 DEGs Heatmap](figures/heatmap_top20_DEGs.png)
+ggplot2
 
-## 🧪 Sample Groups
+pheatmap
 
-- **Virgin:** Samples from virgin mice (n=4)
-- **Pregnant:** Samples from pregnant mice (n=6)
+readxl
 
-## ✍️ Author
+🧪 Methodology
+Data Import: Raw count matrix was loaded and cleaned.
 
-**Vasundhara Renukdas**  
-[LinkedIn](https://www.linkedin.com/in/vasundhara2205) | MSc Biotechnology, MIT-WPU
+Metadata Creation: Sample metadata created manually to define sample conditions.
+
+DEG Analysis: DESeq2 was used to identify differentially expressed genes.
+
+Visualization:
+
+Volcano Plot to highlight significant DEGs.
+
+Heatmap of top 20 DEGs using normalized counts.
+
+📈 Results
+Total genes analyzed: ~15,000
+
+Significantly differentially expressed genes (padj < 0.05): [Count from your CSV]
+
+Notable gene expression patterns between reproductive conditions were observed.
+
+📁 Repository Structure
+
+RNAseq-MouseLactation-DEG/
+├── data/
+│   ├── GSE60450_Lactation-GenewiseCounts.txt
+│   └── sample_metadata.csv
+├── results/
+│   ├── volcano_plot.png
+│   ├── heatmap.png
+│   └── DEGs_GSE60450.csv
+├── scripts/
+│   └── differential_expression.R
+├── README.md
+📚 References
+GEO Dataset: GSE60450
+
+Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome biology, 15(12), 550.
+
+🙋‍♀️ Author
+Vasundhara Renukdas
 
